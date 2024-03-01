@@ -75,6 +75,8 @@ const App = () => {
                   <Td maxW={isMobile ? 5 : 100}>{email}</Td>
                   <Td p={0}>
                     <EditIcon
+                      transition="all 0.2s ease-in"
+                      _hover={{ transform: "scale(1.1)", color: "#3182ce " }}
                       fontSize={20}
                       onClick={() => [
                         setDataEdit({ name, email, index }),
@@ -84,6 +86,8 @@ const App = () => {
                   </Td>
                   <Td p={0}>
                     <DeleteIcon
+                      transition="all 0.2s ease-in"
+                      _hover={{ transform: "scale(1.1)", color: "#E53E3E" }}
                       fontSize={20}
                       onClick={() => handleRemove(email)}
                     />
